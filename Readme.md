@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Денис Вильданов](https://up.htmlacademy.ru/htmlcss/22/user/829567).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
