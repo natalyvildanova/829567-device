@@ -5,8 +5,178 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <header>
+      <h1><a>Device</a></h1>
+      <section>
+        <form class="search">
+          <button type="submit" value="Найти"></button>
+          <input type="search" placeholder="Поиск по сайту">
+        </form>
+        <ul class="Login-profile">
+          <li><a href="#">Войти</a></li>
+        </ul>
+        <p><a href="#">Сравнить</a></p>
+        <p><a href="#">Корзина</a></p>
+      </section>
+      <nav class="main-nav">
+        <div class="catalog">
+          <p><label>Каталог товаров<input type="checkbox"></label></p>
+            <ul>
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="catalog.html">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+        </div>
+        <p><a href="#">Доставка</a></p>
+        <p><a href="#">Гарантия</a></p>
+        <p><a href="#">Контакты</a></p>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <p class="button info">Подробнее</p>
+        <form class="slides">
+          <input type="radio" name="slide-1" id="slide-1" class="slide-1" checked>
+          <input type="radio" name="slide-2" id="slide-2" class="slide-2">
+          <input type="radio" name="slide-3" id="slide-3" class="slide-3">
+        </form>
+      </section> 
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+      <section class="slide-1">
+        <img src="" width="" height="" alt="Монопод для селфи">
+        <h2>01</h2>
+        <p class="call">Делай селфи, как Бен Стиллер!</p>
+        <p>Самая длинная палка для селфи доступна в нашем магазине. 
+          Восемь(восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+        <table class="table-slide-1">
+          <tr>
+            <td>8,5 м</td>
+            <td>5 кг</td>
+            <td>Карбон</td>
+          </tr>
+          <tr>
+            <th>Длина палки</th>
+            <th>Вес палки</th>
+            <th>Материал</th>
+          </tr>
+        </table>
+      </section>
 
+      <section class="slide-2">
+          <img src="" width="" height="" alt="фитнес-браслет">
+          <h2>02</h2>
+          <p class="call">Худеем правильно!</p>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать 
+            занятия и соблюдать диету.</p>
+          <table class="table-slide-2">
+            <tr>
+              <td>48 часов</td>
+            </tr>
+            <tr>
+              <th>Без подзарядки</th>
+            </tr>
+          </table>
+        </section>
+
+        <section class="slide-3">
+            <img src="" width="" height="" alt="Квадрокоптер">
+            <h2>03</h2>
+            <p class="call">Порхает как бабочка, жалит как пчела!</p>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+              замаскированным под стандартную камеру.</p>
+            <table class="table-slide-2">
+              <tr>
+                <td>800 м</td>
+                <td>50 м</td>
+              </tr>
+              <tr>
+                <th>Дальность полёта</th>
+                <th>Радиус поражения</th>
+              </tr>
+            </table>
+          </section>
+
+          <nav class="nav-1">
+              <ul>
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="catalog.html">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
+          </nav>
+
+          <section>
+            <p class="button">Доставка</p>
+            <div class="delivery">
+              <h2>Доставка</h2>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, поднимая его на ваш этаж</p>
+            </div>
+            <p class="button">Гарантия</p>
+            <div class="guarantee">
+              <h2>Гарания</h2>
+              <p></p>
+            </div>
+            <p class="button">Кредит</p>
+            <div class="credit">
+              <h2>Кредит</h2>
+              <p></p>
+            </div>
+          </section>
+
+          <section class="partners"></section>
+
+          <section>
+            <div class="about-us">
+              <h2>О нас</h2>
+              <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+              <p>Мы можем доставить ваш товар в самые отдалённые точки России! DEVICE работает со многими
+                транспортными компаниями:</p>
+              <ul>
+                <li>Деловые линии</li>
+                <li>Автотрейдинг</li>
+                <li>ЖелДорЭкспедиция</li>
+              </ul>
+              <p class="button"><a href="#">Подробнее о нас</a></p>
+            </div>
+            <div class="Contacts">
+              <h2>Контакты</h2>
+              <p>Вы можете забрать товар сами, заехав в шас офис. Заодно, вы сможете проверить 
+                работоспособность покупки. Всякое бывает.</p>
+              <div class="map"></div>
+              <p class="button"><a href="#">Напишите нам</a></p>
+            </div>
+          </section>
+    </main>
+    <footer>
+        <div class="left">
+          <h1><a>Device</a></h1>
+          <p>г. Москва, ул. Строителей, 15</p>
+        </div>
+        <div class="center">
+          <p class="button"><a href="#">Доставка</a></p>
+          <p class="button"><a href="#">Гарантия</a></p>
+          <p class="button"><a href="#">Контакты</a></p>
+          <div class="social">
+              <a href="#">facebook</a>
+              <a href="#">intagram</a>
+              <a href="#">twitter</a>
+          </div>
+        </div>
+        <div class="left">
+            <ul class="Login-profile">
+                <li><a href="#">Войти</a></li>
+            </ul>
+            <p><a href="#">Сравнить</a></p>
+            <p><a href="#">Корзина</a></p>
+            <p>Тел:+7(495)495-95-95</p>
+            <a href="#">htmlacademy</a>
+        </div>
+      </footer>
   </body>
 </html>
