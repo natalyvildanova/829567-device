@@ -4,10 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
+    <h1 class="visually-hidden">Интернет-магазин "DEVICE"</h1>
+    <h2 class="visually-hidden">Для пользователя</h2>
     <div class="logo">
       <a>
         <svg class="main-nav__logo" xmlns="http://www.w3.org/2000/svg" width="164" height="34" viewBox="0 0 163.281 34.938">
@@ -34,8 +39,9 @@
       </ul>
     </section>
     <nav class="main-nav">
+      <h2 class="visually-hidden">Всё о товаре</h2>
       <div class="catalog">
-        <a href="#">Каталог товаров</a>
+        <a href="#" class="button">Каталог товаров</a>
         <div class="dropout-list">
           <ul>
             <li>
@@ -59,22 +65,22 @@
           </ul>
         </div>
       </div>
-      <ul>
+      <ul class="header-site-menu">
         <li>
-          <a href="#">Доставка</a>
+          <a href="#" class="button">Доставка</a>
         </li>
         <li>
-          <a href="#">Гарантия</a>
+          <a href="#" class="button">Гарантия</a>
         </li>
         <li>
-          <a href="#">Контакты</a>
+          <a href="#" class="button">Контакты</a>
         </li>
       </ul>
     </nav>
   </header>
   <main>
 
-    <section class="slide-1">
+    <section class="slider slide-1">
       <img src="img/slide-1.png" width="526" height="497" alt="Монопод для селфи">
       <p class="slide-number">01</p>
       <p class="call">Делай селфи, как Бен Стиллер!</p>
@@ -94,7 +100,7 @@
       </table>
     </section>
 
-    <section class="slide-2">
+    <section class="slider slide-2">
       <img src="img/slide-2.png" width="526" height="497" alt="фитнес-браслет">
       <p class="slide-number">02</p>
       <p class="call">Худеем правильно!</p>
@@ -110,23 +116,22 @@
       </table>
     </section>
 
-    <section class="slide-3">
+    <section class="slider slide-3">
       <img src="img/slide-3.png" width="526" height="497" alt="Квадрокоптер">
       <p class="slide-number">03
-        <p>
-          <p class="call">Порхает как бабочка, жалит как пчела!</p>
-          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-          <a class="button" href="#">Подробнее</a>
-          <table class="table-slide-2">
-            <tr>
-              <td>800 м</td>
-              <td>50 м</td>
-            </tr>
-            <tr>
-              <th>Дальность полёта</th>
-              <th>Радиус поражения</th>
-            </tr>
-          </table>
+        <p class="call">Порхает как бабочка, жалит как пчела!</p>
+        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+        <a class="button" href="#">Подробнее</a>
+        <table class="table-slide-2">
+          <tr>
+            <td>800 м</td>
+            <td>50 м</td>
+          </tr>
+          <tr>
+            <th>Дальность полёта</th>
+            <th>Радиус поражения</th>
+          </tr>
+        </table>
     </section>
 
     <section class="nav-1">
@@ -152,7 +157,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="order-slider">
       <button>Доставка</button>
       <div class="delivery">
         <h2>Доставка</h2>
@@ -173,27 +178,30 @@
       </div>
     </section>
 
-    <section class="partners">
-      <div class="partners-item">
-        <a href="https://www.dji.com/ru">
-          <img src="img/dji.jpg" alt="DJI" width="260" height="100">
-        </a>
-      </div>
-      <div class="partners-item">
-        <a href="http://www.sp-gadgets.com/">
-          <img src="img/spgadgets.jpg" alt="SpGadgets" width="260" height="100">
-        </a>
-      </div>
-      <div class="partners-item">
-        <a href="https://www.dji.com/ru">
-          <img src="img/gopro.jpg" alt="GoPro" width="260" height="100">
-        </a>
-      </div>
-      <div class="partners-item">
-        <a href="https://gopro.com/">
-          <img src="img/vive.jpg" alt="Vive" width="260" height="100">
-        </a>
-      </div>
+    <section class="brands">
+      <h2 class="visually-hidden">Популярные бренды</h2>
+      <ul>
+        <li>
+          <a href="https://www.dji.com/ru">
+            <img src="img/dji.jpg" alt="DJI" width="260" height="100">
+          </a>
+        </li>
+        <li>
+          <a href="http://www.sp-gadgets.com/">
+            <img src="img/spgadgets.jpg" alt="SpGadgets" width="260" height="100">
+          </a>
+        </li>
+        <li>
+          <a href="https://gopro.com/">
+            <img src="img/gopro.jpg" alt="GoPro" width="260" height="100">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.vive.com/ru/">
+            <img src="img/vive.jpg" alt="Vive" width="260" height="100">
+          </a>
+        </li>
+      </ul>
     </section>
 
     <section>
@@ -240,7 +248,8 @@
     </div>
   </main>
   <footer>
-    <div class="left ">
+    <div class="footer-top">
+      <h2 class="visually-hidden">Для пользователя</h2>
       <div class="logo ">
         <a>
           <svg class="main-nav__logo " xmlns="http://www.w3.org/2000/svg" width="163 " height="34 " viewBox="0 0 163.281
@@ -250,27 +259,6 @@
           </svg>
         </a>
       </div>
-      <p>г. Москва, ул. Строителей, 15</p>
-    </div>
-    <div class="center ">
-      <a href="# " class="button ">Доставка</a>
-      <a href="# " class="button ">Гарантия</a>
-      <a href="# " class="button ">Контакты</a>
-      <div class="social ">
-        <ul>
-          <li>
-            <a href="# ">facebook</a>
-          </li>
-          <li>
-            <a href="# ">intagram</a>
-          </li>
-          <li>
-            <a href="# ">twitter</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="left ">
       <ul class="profile ">
         <li>
           <a href="# ">Войти</a>
@@ -282,8 +270,33 @@
           <a href="# ">Корзина</a>
         </li>
       </ul>
+    </div>
+    <div class="footer-middle">
+      <h2 class="visually-hidden">Условия покупки</h2>
+      <p>г. Москва, ул. Строителей, 15</p>
+      <ul class="footer-site-menu">
+        <li><a href="# " class="button">Доставка</a></li>
+        <li><a href="# " class="button">Гарантия</a></li>
+        <li><a href="# " class="button">Контакты</a></li>
+      </ul>
       <p>Тел:+7(495)495-95-95</p>
-      <a href="# ">htmlacademy</a>
+    </div>
+    <div class="fotter-bottom">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <ul class="social">
+        <li>
+          <a href="# ">facebook</a>
+        </li>
+        <li>
+          <a href="# ">intagram</a>
+        </li>
+        <li>
+          <a href="# ">twitter</a>
+        </li>
+      </ul>
+      <p class="copyright-icon">
+        <a href="# ">HTML Academy</a>
+      </p>
     </div>
   </footer>
 </body>
