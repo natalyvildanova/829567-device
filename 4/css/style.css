@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Gilroy ExtraBold";
+    src: local("Gilroy Extra Bold"),
+         local("Gilroy ExtraBold");
+    src: url("/css/fonts/gilroyextrabold-webfont.woff2") format("woff2"),
+         url("/css/fonts/gilroyextrabold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    width: 1440px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #f7e296
+}
+
+footer {
+    background-color: #464646;
+}
+
+.call {
+    font-family: "Gilroy ExtraBold", sans-serif;
+    font-size: 47px;
+}
+.slide-number {
+    font-family: "Gilroy ExtraBold", sans-serif;
+    font-size: 179px;
+    color: #ffffff;
+    background-color: gray;
+}
+
+
+.order-slider {
+    background-color: #e5e5e5;
+}
+
+.brands img {
+    filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */
+    opacity: 0.2;
+  }
+.brands img:hover {
+    filter: none;
+    opacity: 1;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
+
+.button,
+button {
+    display: block;
+    width: 220px;
+    height: 40px;
+    font-family: "Gilroy ExtraBold", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+    line-height: 40px;
+    letter-spacing: 3.6px;
+    border: none;
+    background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+}
+button {
+    width: 160px;
+}
+.about-us .button {
+    width: 260px;
+}
+.container-left .button {
+    width: 200px;
+}
+header .button,
+header button {
+    background: none;
+}
+footer .button {
+    color: #ffffff;
+    background: none;
+}
+button:hover,
+.button:hover {
+    background-color: #f0c52e;
+}
+.slider .button:active
+.about-us .button:active {
+    color: rbga(0, 0, 0, 0.3);
+    background-color: #f0c52e;
+}
+.order-slider button:active {
+    color: #f7e184;
+    background: none;
+    background-color: #000000;    
+}
