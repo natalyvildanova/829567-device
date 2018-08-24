@@ -13,6 +13,7 @@ body {
     width: 1440px;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
+    line-height: 30px;
     background-color: #ffffff;
 }
 
@@ -20,33 +21,142 @@ a {
     text-decoration: none;
 }
 
-header {
+.header {
     background-color: #f7e296
 }
 
-footer {
-    background-color: #464646;
+.logo:hover {
+    opacity: 0.6;
+}
+.logo:active {
+    opacity: 0.3;
 }
 
-.call {
+.search-form__input {
+    width: 441px;
+    height: 45px;
+    border: none;
+    background-color: #f7e296;
+}
+.search-form__input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+.search-form__input:hover::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+.search-form__input:focus::placeholder {
+    color: rgba(0, 0, 0, 1);
+}
+.search-form__input:focus {
+    border-bottom: 2px solid black;
+    outline: none;
+}
+.search-form__button {
+    opacity: 0;
+    position: absolute;
+    left: 415px;
+    width: 81px;
+    height: 45px;
+    background-color: transparent;
+    border: 2px solid black;
+}
+.search-form__button {
+    opacity: 1;
+}
+.search-form__button:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid black
+}
+.search-form__button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: black;
+    border: 2px solid black
+}
+
+.header__user-profile  {
+    list-style: none;
+}
+.header__user-profile_item {
+    color: black;
+}
+.header__user-profile_item:hover {
+    color: rgba(0, 0, 0, 0.6)
+}
+.header__user-profile_item:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.list {
+    list-style: none;
+}
+.item {
+    color: black;
+}
+.item:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.item:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.button {
+    display: block;
+    height: 40px;
     font-family: "Gilroy ExtraBold", sans-serif;
-    font-size: 47px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 3.6px;
+    border: none;
+    color: #000000;
 }
-.slide-number {
-    font-family: "Gilroy ExtraBold", sans-serif;
-    font-size: 179px;
-    color: #ffffff;
-    background-color: gray;
+.slider__link_button {
+    width: 220px;
+    background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+}
+.general-info__link_button {
+    width: 260px;
+    background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+}
+.services_button {
+    width: 160px;
+    background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+}
+.column-left_button,
+.item-add__link_button {
+    width: 200px;
+    background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+}
+.slider__link_button:hover,
+.general-info__link_button:hover,
+.services_button:hover,
+.column-left_button:hover,
+.item-add__link_button:hover {
+    background-color: #f0c52e;
+}
+.slider__link_button:active,
+.general-info__link_button:active,
+.column-left_button:active,
+.item-add__link_button:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #f0c52e;
+}
+.services_button:active {
+    color: #f7e184;
+    background: none;
+    background-color: #000000; 
 }
 
-
-.order-slider {
-    background-color: #e5e5e5;
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
 }
-
+/* TODO: убрать использование тега и каскад */
 .brands img {
     filter: grayscale(100%);
-    filter: gray; /* IE 6-9 */
+    filter: gray; IE 6-9 
     opacity: 0.2;
   }
 .brands img:hover {
@@ -54,54 +164,50 @@ footer {
     opacity: 1;
 }
 
-.visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-}
-
-.button,
-button {
-    display: block;
-    width: 220px;
-    height: 40px;
-    font-family: "Gilroy ExtraBold", sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: center;
+.footer {
+    background-color: #464646;
     color: #000000;
-    line-height: 40px;
-    letter-spacing: 3.6px;
-    border: none;
     background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 }
-button {
-    width: 160px;
+
+/* Каталог */
+
+.breadcrumbs-link {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.3);
 }
-.about-us .button {
-    width: 260px;
+.breadcrumbs-link:hover {
+    color: rgba(0, 0, 0, 0.6);
 }
-.container-left .button {
-    width: 200px;
+.breadcrumbs-link:active {
+    color: rgba(0, 0, 0, 0.1);
 }
-header .button,
-header button {
-    background: none;
+
+.shop_title {
+    font-family: "Gilroy ExtraBold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
 }
-footer .button {
-    color: #ffffff;
-    background: none;
+.filter_fieldset {
+    border: none;
 }
-button:hover,
-.button:hover {
-    background-color: #f0c52e;
+.filter_legend {
+    font-family: "Gilroy ExtraBold", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
 }
-.slider .button:active
-.about-us .button:active {
-    color: rbga(0, 0, 0, 0.3);
-    background-color: #f0c52e;
+/* TODO: фильтры и сортировка. */
+.item-add_link-compare {
+    font-size: 13px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.5);
 }
-.order-slider button:active {
-    color: #f7e184;
-    background: none;
-    background-color: #000000;    
+.item-add_link-compare:hover {
+    color: rgba(0, 0, 0, 1);
+}
+.item-add_link-compare:active {
+    color: rgba(0, 0, 0, 0.2);
 }

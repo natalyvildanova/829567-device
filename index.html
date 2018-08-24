@@ -10,70 +10,73 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <h1 class="visually-hidden">Интернет-магазин "DEVICE"</h1>
     <h2 class="visually-hidden">Для пользователя</h2>
-    <div class="logo">
+    <div class="header__logo logo">
       <a>
-        <svg class="main-nav__logo" xmlns="http://www.w3.org/2000/svg" width="164" height="34" viewBox="0 0 163.281 34.938">
+        <svg xmlns="http://www.w3.org/2000/svg" width="164" height="34" viewBox="0 0 163.281 34.938">
           <path d="M199.58,204.911v33.6h13.532a15.723,15.723,0,0,0,11.72-4.824,17.575,17.575,0,0,0,0-23.952,15.723,15.723,0,0,0-11.72-4.824H199.58Zm7.733,26.208V212.3h5.8a8.646,8.646,0,0,1,6.5,2.568,10.643,10.643,0,0,1,0,13.68,8.646,8.646,0,0,1-6.5,2.568h-5.8Zm34.8-5.952h12.082v-7.3H242.109V212.3H255.4v-7.392H234.376v33.6h21.265v-7.392H242.109v-5.952Zm36.343,13.344,11.019-33.6h-8.458l-7.491,24.72-7.491-24.72h-8.457l11.019,33.6h9.859Zm14.4,0h7.733v-33.6h-7.733v33.6Zm38.615-1.416a15.514,15.514,0,0,0,6.041-5.688l-6.67-3.84a7.49,7.49,0,0,1-3.165,3.024,9.88,9.88,0,0,1-4.664,1.1,9.594,9.594,0,0,1-7.177-2.736,11.135,11.135,0,0,1,0-14.5,9.594,9.594,0,0,1,7.177-2.736,9.914,9.914,0,0,1,4.64,1.08,7.6,7.6,0,0,1,3.189,3.048l6.67-3.84a15.881,15.881,0,0,0-6.09-5.688,17.419,17.419,0,0,0-8.409-2.088,17.475,17.475,0,1,0,0,34.944A17.519,17.519,0,0,0,331.468,237.1Zm17.881-11.928h12.082v-7.3H349.349V212.3h13.29v-7.392H341.617v33.6h21.264v-7.392H349.349v-5.952Z"
             transform="translate(-199.594 -204.25)" fill="#000000"></path>
         </svg>
       </a>
     </div>
-    <section>
-      <form class="filter" method="GET" action="https://echo.htmlacademy.ru/">
-        <input type="search" placeholder="Поиск по сайту">
-        <button type="submit">Найти</button>
+    <section class="header-middle">
+      <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
+        <input class="search-form__input" type="search" placeholder="Поиск по сайту">
+        <button class="search-form__button" type="submit">Найти</button>
       </form>
-      <ul class="profile">
+      <ul class="header__user-profile list">
         <li>
-          <a href="#">Войти</a>
+          <a class="header__user-profile_item item" href="#">Войти</a>
         </li>
         <li>
-          <a href="#">Сравнить</a>
+          <a class="header__user-profile_item item" href="#">Сравнить</a>
         </li>
         <li>
-          <a href="#">Корзина</a>
+          <a class="header__user-profile_item item" href="#">Корзина</a>
         </li>
       </ul>
     </section>
     <nav class="main-nav">
       <h2 class="visually-hidden">Всё о товаре</h2>
-      <div class="catalog">
-        <a href="#" class="button">Каталог товаров</a>
-        <div class="dropout-list">
-          <ul>
-            <li>
-              <a href="#">Виртуальная реальность</a>
-            </li>
-            <li>
-              <a href="catalog.html">Моноподы для селфи</a>
-            </li>
-            <li>
-              <a href="#">Экшн-камеры</a>
-            </li>
-            <li>
-              <a href="#">Фитнес-браслеты</a>
-            </li>
-            <li>
-              <a href="#">Умные часы</a>
-            </li>
-            <li>
-              <a href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <ul class="header-site-menu">
-        <li>
-          <a href="#" class="button">Доставка</a>
+      <ul class="main-nav__list  list">
+        <li><a href="#" class="button item">Каталог товаров</a>
+          <div class="main-nav_catalog">
+            <ul class="nav__catalog-list list">
+              <li>
+                <a href="#" class="item">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="catalog.html" class="item">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="#" class="item">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="main-nav__catalog-list  list">
+              <li>
+                <a href="#" class="item">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="#" class="item">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="main-nav__catalog-list  list">
+              <li>
+                <a href="#" class="item">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li>
-          <a href="#" class="button">Гарантия</a>
+          <a href="#" class="button item">Доставка</a>
         </li>
         <li>
-          <a href="#" class="button">Контакты</a>
+          <a href="#" class="button item">Гарантия</a>
+        </li>
+        <li>
+          <a href="#" class="button item">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -85,7 +88,7 @@
       <p class="slide-number">01</p>
       <p class="call">Делай селфи, как Бен Стиллер!</p>
       <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь(восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-      <a class="button" href="#">Подробнее</a>
+      <a class="slider__link_button button" href="#">Подробнее</a>
       <table class="table-slide-1">
         <tr>
           <td>8,5 м</td>
@@ -105,7 +108,7 @@
       <p class="slide-number">02</p>
       <p class="call">Худеем правильно!</p>
       <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-      <a class="button" href="#">Подробнее</a>
+      <a class="slider__link_button button" href="#">Подробнее</a>
       <table class="table-slide-2">
         <tr>
           <td>48 часов</td>
@@ -121,7 +124,7 @@
       <p class="slide-number">03
         <p class="call">Порхает как бабочка, жалит как пчела!</p>
         <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-        <a class="button" href="#">Подробнее</a>
+        <a class="slider__link_button button" href="#">Подробнее</a>
         <table class="table-slide-2">
           <tr>
             <td>800 м</td>
@@ -157,20 +160,20 @@
       </ul>
     </section>
 
-    <section class="order-slider">
-      <button>Доставка</button>
+    <section class="services">
+      <button class="services_button button">Доставка</button>
       <div class="delivery">
         <h2>Доставка</h2>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
           поднимая его на ваш этаж</p>
       </div>
-      <button>Гарантия</button>
+      <button class="services_button button">Гарантия</button>
       <div class="guarantee">
         <h2>Гарания</h2>
         <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар,
           не дом, конечно же.</p>
       </div>
-      <button>Кредит</button>
+      <button class="services_button button">Кредит</button>
       <div class="credit">
         <h2>Кредит</h2>
         <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
@@ -204,7 +207,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="general-info">
       <div class="about-us">
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -214,7 +217,7 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#" class="button">Подробнее о нас</a>
+        <a href="#" class="general-info__link_button button">Подробнее о нас</a>
       </div>
       <div class="contacts">
         <h2>Контакты</h2>
@@ -224,7 +227,7 @@
         <div class="map">
           <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
         </div>
-        <a href="#" class="button">Напишите нам</a>
+        <a href="#" class="general-info__link_button button">Напишите нам</a>
       </div>
     </section>
     <!-- Форма, всплывающая при нажатии на кнопку "напишите нам" -->
@@ -250,9 +253,9 @@
   <footer>
     <div class="footer-top">
       <h2 class="visually-hidden">Для пользователя</h2>
-      <div class="logo ">
+      <div class="logo">
         <a>
-          <svg class="main-nav__logo " xmlns="http://www.w3.org/2000/svg" width="163 " height="34 " viewBox="0 0 163.281
+          <svg  xmlns="http://www.w3.org/2000/svg" width="163 " height="34 " viewBox="0 0 163.281
         34.938 ">
             <path d="M199.58,204.911v33.6h13.532a15.723,15.723,0,0,0,11.72-4.824,17.575,17.575,0,0,0,0-23.952,15.723,15.723,0,0,0-11.72-4.824H199.58Zm7.733,26.208V212.3h5.8a8.646,8.646,0,0,1,6.5,2.568,10.643,10.643,0,0,1,0,13.68,8.646,8.646,0,0,1-6.5,2.568h-5.8Zm34.8-5.952h12.082v-7.3H242.109V212.3H255.4v-7.392H234.376v33.6h21.265v-7.392H242.109v-5.952Zm36.343,13.344,11.019-33.6h-8.458l-7.491,24.72-7.491-24.72h-8.457l11.019,33.6h9.859Zm14.4,0h7.733v-33.6h-7.733v33.6Zm38.615-1.416a15.514,15.514,0,0,0,6.041-5.688l-6.67-3.84a7.49,7.49,0,0,1-3.165,3.024,9.88,9.88,0,0,1-4.664,1.1,9.594,9.594,0,0,1-7.177-2.736,11.135,11.135,0,0,1,0-14.5,9.594,9.594,0,0,1,7.177-2.736,9.914,9.914,0,0,1,4.64,1.08,7.6,7.6,0,0,1,3.189,3.048l6.67-3.84a15.881,15.881,0,0,0-6.09-5.688,17.419,17.419,0,0,0-8.409-2.088,17.475,17.475,0,1,0,0,34.944A17.519,17.519,0,0,0,331.468,237.1Zm17.881-11.928h12.082v-7.3H349.349V212.3h13.29v-7.392H341.617v33.6h21.264v-7.392H349.349v-5.952Z "
               transform="translate(-199.594 -204.25) " fill="#ffc600 "></path>
