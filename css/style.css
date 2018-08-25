@@ -12,10 +12,12 @@
 }
 
 html {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -64,11 +66,41 @@ a {
     border-bottom: 2px solid inherit;
 }
 
+.search-form__input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-form__input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-form__input::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .search-form__input::placeholder {
     color: rgba(0, 0, 0, 0.3);
 }
+.search-form__input:hover::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+.search-form__input:hover:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+.search-form__input:hover::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
 .search-form__input:hover::placeholder {
     color: rgba(0, 0, 0, 0.6);
+}
+.search-form__input:focus::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 1);
+}
+.search-form__input:focus:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 1);
+}
+.search-form__input:focus::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 1);
 }
 .search-form__input:focus::placeholder {
     color: rgba(0, 0, 0, 1);
@@ -179,6 +211,8 @@ a {
     line-height: 40px;
     letter-spacing: 3.6px;
     color: black;
+    background: -webkit-linear-gradient(top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+    background: -o-linear-gradient(top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
     background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 }
 .slider__link:hover {
@@ -215,6 +249,8 @@ a {
     text-transform: uppercase;
     border: none;
     color: black;
+    background: -webkit-linear-gradient(top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+    background: -o-linear-gradient(top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
     background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 }
 .services__button:hover {
@@ -233,8 +269,24 @@ a {
     color: black;
 }
 
-.brands__list {
+.brands-list {
     list-style: none;
+}
+.brands-list__link {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-filter: gray;
+            filter: gray; IE 6-9
+}
+.brands-list__logo {
+    opacity: 0.2;
+}
+.brands-list__link:hover {
+    -webkit-filter: none;
+            filter: none;
+}
+.brands-list__logo:hover {
+    opacity: 1;
 }
 
 .general-info__title {
@@ -264,6 +316,8 @@ a {
     text-transform: uppercase;
     border: none;
     color: black;
+    background: -webkit-linear-gradient(top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+    background: -o-linear-gradient(top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
     background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 }
 .general-info__link:hover {
@@ -338,16 +392,7 @@ a {
 .copyright__link {
     color: rgba(251, 195, 1, 1)
 }
-/* TODO: убрать использование тега и каскад */
-.brands img {
-    filter: grayscale(100%);
-    filter: gray; IE 6-9 
-    opacity: 0.2;
-  }
-.brands img:hover {
-    filter: none;
-    opacity: 1;
-}
+
 
 
 /* 
@@ -383,11 +428,41 @@ a {
     border-bottom: 2px solid inherit;
 }
 
+.search-form__input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-form__input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-form__input::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .search-form__input::placeholder {
     color: rgba(0, 0, 0, 0.3);
 }
+.search-form__input:hover::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+.search-form__input:hover:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+.search-form__input:hover::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
 .search-form__input:hover::placeholder {
     color: rgba(0, 0, 0, 0.6);
+}
+.search-form__input:focus::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 1);
+}
+.search-form__input:focus:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 1);
+}
+.search-form__input:focus::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 1);
 }
 .search-form__input:focus::placeholder {
     color: rgba(0, 0, 0, 1);
@@ -552,6 +627,8 @@ a {
     text-transform: uppercase;
     border: none;
     color: black;
+    background: -webkit-linear-gradient(top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+    background: -o-linear-gradient(top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
     background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 }
 .filter__button:hover {
@@ -605,6 +682,8 @@ a {
     line-height: 40px;
     letter-spacing: 3.6px;
     color: black;
+    background: -webkit-linear-gradient(top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+    background: -o-linear-gradient(top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
     background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 }
 .shop-item__link:hover {
