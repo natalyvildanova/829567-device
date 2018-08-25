@@ -6,52 +6,34 @@
          url("/css/fonts/gilroyextrabold-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy Light";
+    src: url("/css/fonts/gilroyextrabold-webfont.woff2") format("woff2"),
+         url("/css/fonts/gilroylight-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
 
+html {
+    box-sizing: border-box;
 }
 
 body {
-    width: 1440px;
-    font-family: "Open Sans", sans-serif;
+    min-width: 1200px;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
+    line-height: 30px;
     background-color: #ffffff;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 a {
     text-decoration: none;
-}
-
-header {
-    background-color: #f7e296
-}
-
-footer {
-    background-color: #464646;
-}
-
-.call {
-    font-family: "Gilroy ExtraBold", sans-serif;
-    font-size: 47px;
-}
-.slide-number {
-    font-family: "Gilroy ExtraBold", sans-serif;
-    font-size: 179px;
-    color: #ffffff;
-    background-color: gray;
-}
-
-
-.order-slider {
-    background-color: #e5e5e5;
-}
-
-.brands img {
-    filter: grayscale(100%);
-    filter: gray; /* IE 6-9 */
-    opacity: 0.2;
-  }
-.brands img:hover {
-    filter: none;
-    opacity: 1;
 }
 
 .visually-hidden {
@@ -59,49 +41,231 @@ footer {
     clip: rect(0 0 0 0);
 }
 
-.button,
-button {
+.header {
+    background-color: #f7e296
+}
+
+.header__logo {
+    width: 164px;
+    height: 34px;
+}
+.logo__link:hover {
+    opacity: 0.6;
+}
+.logo__link:active {
+    opacity: 0.3;
+}
+
+.search-form__input {
+    width: 441px;
+    height: 45px;
+    border: none;
+    background-color: #f7e296;
+}
+.search-form__button {
+    position: absolute;
+    left: 415px;
+    width: 81px;
+    height: 45px;
+    background-color: transparent;
+    border: 2px solid black;
+}
+.search-form__input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+.search-form__input:hover::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+.search-form__input:focus::placeholder {
+    color: rgba(0, 0, 0, 1);
+}
+.search-form__input:focus {
+    border-bottom: 2px solid black;
+    outline: none;
+}
+.search-form__button:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid black
+}
+.search-form__button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: black;
+    border: 2px solid black
+}
+
+.user-profile {
+    list-style: none;
+}
+.user-profile__link {
+    color: black;
+}
+.user-profile__link:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.user-profile__link:active {
+    color: rgba(0, 0, 0, 0.3)
+}
+
+.nav-list {
+    list-style: none;
+}
+.nav-list__link {
+    font-family: "Gilroy ExtraBold", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    color: black;
+}
+.nav-list__link:hover {
+    color: rgba(0, 0, 0, 0.6)
+}
+.nav-list__link:active {
+    color: rgba(0, 0, 0, 0.3)
+}
+
+.catalog-list {
+    list-style: none;
+}
+.catalog-list__link {
+    color: black;
+    line-height: 36px;
+}
+.catalog-list__link:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.catalog-list__link:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+/*
+.list {
+    list-style: none;
+}
+.main-nav__link {
+    color: black;
+}
+.main-nav__link:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.main-nav__link:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+.main-nav__link--bold {
+    font-family: "Gilroy ExtraBold", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.button {
     display: block;
-    width: 220px;
     height: 40px;
     font-family: "Gilroy ExtraBold", sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
-    color: #000000;
     line-height: 40px;
     letter-spacing: 3.6px;
     border: none;
+    color: #000000;
+}
+.slider__link_button {
+    width: 220px;
     background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 }
-button {
-    width: 160px;
-}
-.about-us .button {
+.general-info__link_button {
     width: 260px;
+    background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 }
-.container-left .button {
+.services_button {
+    width: 160px;
+    background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+}
+.column-left_button,
+.item-add__link_button {
     width: 200px;
+    background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 }
-header .button,
-header button {
-    background: none;
-}
-footer .button {
-    color: #ffffff;
-    background: none;
-}
-button:hover,
-.button:hover {
+.slider__link_button:hover,
+.general-info__link_button:hover,
+.services_button:hover,
+.column-left_button:hover,
+.item-add__link_button:hover {
     background-color: #f0c52e;
 }
-.slider .button:active
-.about-us .button:active {
-    color: rbga(0, 0, 0, 0.3);
+.slider__link_button:active,
+.general-info__link_button:active,
+.column-left_button:active,
+.item-add__link_button:active {
+    color: rgba(0, 0, 0, 0.3);
     background-color: #f0c52e;
 }
-.order-slider button:active {
+.services_button:active {
     color: #f7e184;
     background: none;
-    background-color: #000000;    
+    background-color: #000000; 
 }
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
+/* TODO: убрать использование тега и каскад */
+.brands img {
+    filter: grayscale(100%);
+    filter: gray; IE 6-9 
+    opacity: 0.2;
+  }
+.brands img:hover {
+    filter: none;
+    opacity: 1;
+}
+
+.footer {
+    background-color: #464646;
+    color: #000000;
+    background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+}
+
+/* Каталог */
+
+.breadcrumbs-link {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.breadcrumbs-link:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.breadcrumbs-link:active {
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.shop_title {
+    font-family: "Gilroy ExtraBold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+}
+.filter_fieldset {
+    border: none;
+}
+.filter_legend {
+    font-family: "Gilroy ExtraBold", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+/* TODO: фильтры и сортировка. */
+.item-add_link-compare {
+    font-size: 13px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.item-add_link-compare:hover {
+    color: rgba(0, 0, 0, 1);
+}
+.item-add_link-compare:active {
+    color: rgba(0, 0, 0, 0.2);
+} */
