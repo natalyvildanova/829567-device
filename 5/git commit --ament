@@ -1,0 +1,151 @@
+[33mcommit 849df35edcaa8a6015a5f474a059b6dec2268678[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: VildanovDenis <disamapm@gmail.com>
+Date:   Sat Aug 25 20:22:42 2018 +0300
+
+    Базовая стилизация.
+
+[33mcommit a00fbae6e3f4bd9af6be5d5863ca0c8a2908727c[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: VildanovDenis <disamapm@gmail.com>
+Date:   Sat Aug 25 14:39:53 2018 +0300
+
+    321
+
+[33mcommit 45121facaccdcc73cdbfaa1bec09316a8b675e99[m
+Author: VildanovDenis <disamapm@gmail.com>
+Date:   Sat Aug 25 14:39:33 2018 +0300
+
+    123
+
+[33mcommit e7b7a951f9cf1116e2516703bd7cd242f152a94d[m
+Author: VildanovDenis <disamapm@gmail.com>
+Date:   Sat Aug 25 14:38:14 2018 +0300
+
+    Разметил классы по БЭМу
+    
+    Попытка разметить в header классы по БЭМ
+
+[33mcommit 021d868183e848ece17353b801d765a2c54167a3[m
+Author: VildanovDenis <disamapm@gmail.com>
+Date:   Fri Aug 24 17:38:17 2018 +0300
+
+    Сделал состояния.
+    
+    Большей части кнопок и элементов сделал состояния наведения и нажатия.
+
+[33mcommit e2c2b8889bba832c42a20b9934210e330be6498a[m
+Author: VildanovDenis <disamapm@gmail.com>
+Date:   Thu Aug 23 23:11:20 2018 +0300
+
+    Подключил шрифты.
+
+[33mcommit 30056c3edc997a7af1e5e4e87ed28c74fe0c0ad8[m
+Author: VildanovDenis <disamapm@gmail.com>
+Date:   Wed Aug 22 20:24:42 2018 +0300
+
+    Слайды на главной
+    
+    Исправил изображения для слайдов на главной странице.
+
+[33mcommit 2360efbc4ee54a142bbee1edba09fd3fd55b52d8[m
+Author: VildanovDenis <disamapm@gmail.com>
+Date:   Wed Aug 22 20:18:41 2018 +0300
+
+    Валидатора.
+    
+    Исправил ошибки после прогона через валидатор.
+
+[33mcommit 42b6878d1736d3d0f7efa7552fd5abd70090fb29[m
+Author: VildanovDenis <disamapm@gmail.com>
+Date:   Wed Aug 22 14:16:09 2018 +0300
+
+    Логотип и правки.
+    
+    Доработал html код, и заменил логотип.
+
+[33mcommit d48bb6d484836c14eeff102b3e1a015517e88afd[m
+Author: VildanovDenis <41872933+VildanovDenis@users.noreply.github.com>
+Date:   Sat Aug 18 17:44:23 2018 +0300
+
+    Нижний регистр.
+
+[33mcommit c8ae98dac698e5b358d49dd123a365ece5ab795f[m
+Author: VildanovDenis <41872933+VildanovDenis@users.noreply.github.com>
+Date:   Sat Aug 18 17:43:54 2018 +0300
+
+    Нижний регистр
+    
+    Перевод названий изобржений в нижний регистр
+
+[33mcommit 6629a2f27e98c347daa74d7a2d1e6ad705ae2d7c[m
+Author: VildanovDenis <41872933+VildanovDenis@users.noreply.github.com>
+Date:   Sat Aug 18 17:40:49 2018 +0300
+
+    Декоративные изображения
+    
+    Добавил контентные изображения, изменил их регистр на нижний. Экспортиовал и добавил декоративные изображения в расширении .svg
+
+[33mcommit 96aa7077d0f95b1fbf2638988f33bdaccb5d3587[m
+Author: VildanovDenis <41872933+VildanovDenis@users.noreply.github.com>
+Date:   Sat Aug 18 17:00:12 2018 +0300
+
+    Корректировка html кода.
+    
+    Изменил лого. Добавил попапы, но пока они будут закоменченными <--  -->.
+
+[33mcommit e1da975daebd2ea7ee4d48348b5cd1d2f12ee262[m
+Author: VildanovDenis <41872933+VildanovDenis@users.noreply.github.com>
+Date:   Wed Aug 15 17:21:41 2018 +0300
+
+    Поправил разметку.  добавил изображения.
+    
+    Поправил разметку с помощью плагина для ВС Кода, добавил контентные изображения
+
+[33mcommit 7d40036811ced31724cde29ab0a7a5773c244a76[m
+Author: VildanovDenis <41872933+VildanovDenis@users.noreply.github.com>
+Date:   Mon Aug 13 17:19:26 2018 +0300
+
+    Добавлена ссылка на главную страницу
+
+[33mcommit c06dd8b4e97f2dd6320b968c8104c295633a40c7[m
+Author: VildanovDenis <41872933+VildanovDenis@users.noreply.github.com>
+Date:   Mon Aug 13 10:55:03 2018 +0300
+
+    Добавил ссылкам класс button
+    
+    Удалил <p> и добавил ссылкам класс button
+
+[33mcommit 4579305a6efdbd8a8172059e511697778742edc6[m
+Author: VildanovDenis <41872933+VildanovDenis@users.noreply.github.com>
+Date:   Mon Aug 13 10:50:13 2018 +0300
+
+    Работа над замечаниями [2]
+
+[33mcommit e72b32d8e854d4d099440ad7a48b1e8fe44719ed[m
+Author: VildanovDenis <41872933+VildanovDenis@users.noreply.github.com>
+Date:   Sun Aug 12 14:15:56 2018 +0300
+
+    Работа над замечаниями
+    
+    Переделал html-код под замечания
+
+[33mcommit 6608ad8db0d04f9f10db849706601a09ec900b91[m
+Author: VildanovDenis <41872933+VildanovDenis@users.noreply.github.com>
+Date:   Fri Aug 10 15:36:15 2018 +0300
+
+    Первичная разметка HTML
+    
+    Разметил html-код для главной страницы и страницы-каталога с моноподами
+
+[33mcommit a50f1a4a1ae5d5b590f485d8c71ee47ad8135119[m
+Author: VildanovDenis <41872933+VildanovDenis@users.noreply.github.com>
+Date:   Tue Aug 7 14:02:42 2018 +0600
+
+    Добавлен наставник.
+    
+    Добавлено имя наставника и ссылка на профиль академии
+
+[33mcommit 73207194580204efaabeef3de710d22285631392[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Tue Aug 7 10:26:27 2018 +0300
+
+    :hatching_chick:
