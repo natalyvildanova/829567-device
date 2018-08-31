@@ -21,7 +21,6 @@ html {
 }
 
 body {
-    /* width: 1440px; */
     min-width: 1200px;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
@@ -1198,9 +1197,7 @@ a {
     background: -o-linear-gradient(top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
     background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 }
-.shop-item__item-image:hover .item-add {
-    display: block;
-}
+
 .item-add {
     display: none;
     position: absolute;
@@ -1211,6 +1208,9 @@ a {
     padding: 0 80px;
     padding-top: 170px;
     background-color: rgba(238, 238, 238, 0.7);
+}
+.shop-item:hover .item-add {
+    display: block;
 }
 .shop-item__link:hover {
     background-color: #f0c52e;
