@@ -90,6 +90,11 @@
   <main>
 
     <div class="slider">
+      <div class="sider__buttons">
+          <button class="slider__button slider__button--active">Первый слайд</button>
+          <button class="slider__button">Второй слайд</button>
+          <button class="slider__button">Третий слайд</button>
+      </div>
       <section class="slider__slide slider__slide1 current-slide">
         <div class="slider__column-left">
           <img class="slider__image" src="img/slide-1.png" width="526" height="497" alt="Монопод для селфи">
@@ -187,13 +192,13 @@
       <section class="services">
         <div class="services__column-left">
           <div class="services__buttons">
-            <button class="services__button">Доставка</button>
+            <button class="services__button services__button--current">Доставка</button>
             <button class="services__button">Гарантия</button>
             <button class="services__button">Кредит</button>
           </div>
         </div>
         <div class="services__column-right">
-          <div class="services__description current-decription">
+          <div class="services__description services__current--decription">
             <div class="delivery">
               <h2 class="services__title services__title--1">Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
