@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    width: 1440px;
+    /* width: 1440px; */
     min-width: 1200px;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
@@ -955,7 +955,7 @@ a {
     padding: 0 15px;
     color: rgba(0, 0, 0, 0.3);
 }
-.breadcrumbs__link::before {
+/* .breadcrumbs__link::before {
     content: "";
     position: absolute;
     left: -5px;
@@ -965,7 +965,7 @@ a {
     background-image: url("../img/nav-arrow-catalog.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-}
+} */
 .breadcrumbs__link--index {
     padding-left: 0;
 }
@@ -1007,8 +1007,16 @@ a {
     min-height: 70px;
 }
 .header-filter {
+    position: relative;
     padding-left: 60px;
-    background-color: #dbdbdb
+    background-color: #dbdbdb;
+}
+.header-filter::before {
+    position: absolute;
+    width: 1000px;
+    height: 100%;
+    left: 10px;
+    background-color: red;
 }
 .filter-form {
     padding-left: 60px;
