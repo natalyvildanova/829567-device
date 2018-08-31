@@ -21,7 +21,6 @@ html {
 }
 
 body {
-    width: 1440px;
     min-width: 1200px;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
@@ -955,7 +954,7 @@ a {
     padding: 0 15px;
     color: rgba(0, 0, 0, 0.3);
 }
-.breadcrumbs__link::before {
+/* .breadcrumbs__link::before {
     content: "";
     position: absolute;
     left: -5px;
@@ -965,7 +964,7 @@ a {
     background-image: url("../img/nav-arrow-catalog.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-}
+} */
 .breadcrumbs__link--index {
     padding-left: 0;
 }
@@ -1007,8 +1006,16 @@ a {
     min-height: 70px;
 }
 .header-filter {
+    position: relative;
     padding-left: 60px;
-    background-color: #dbdbdb
+    background-color: #dbdbdb;
+}
+.header-filter::before {
+    position: absolute;
+    width: 1000px;
+    height: 100%;
+    left: 10px;
+    background-color: red;
 }
 .filter-form {
     padding-left: 60px;
@@ -1190,9 +1197,7 @@ a {
     background: -o-linear-gradient(top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
     background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 }
-.shop-item__item-image:hover .item-add {
-    display: block;
-}
+
 .item-add {
     display: none;
     position: absolute;
@@ -1203,6 +1208,9 @@ a {
     padding: 0 80px;
     padding-top: 170px;
     background-color: rgba(238, 238, 238, 0.7);
+}
+.shop-item:hover .item-add {
+    display: block;
 }
 .shop-item__link:hover {
     background-color: #f0c52e;
