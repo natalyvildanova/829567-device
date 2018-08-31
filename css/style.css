@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    /* width: 1440px; */
+    width: 1440px;
     min-width: 1200px;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
@@ -1086,7 +1086,7 @@ a {
 }
 .header-sorting {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 69px;
     background-color: #ebebeb;
 }
 .header-sorting__list {
@@ -1122,13 +1122,24 @@ a {
 .shop-item {
     position: relative;
     width: 360px;
-    margin: 10px 0px 10px 40px;
+    margin: 0 0 46px 40px;
+}
+.shop-item__item-image {
+    min-height: 380px;
+    margin-bottom: 23px;
+}
+.shop-item__description {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
 }
 .shop-item__name {
+    max-width: 260px;
     font-family: "Gilroy", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+    word-wrap: normal;
 }
 .shop-item__price {
     font-family: "Gilroy", sans-serif;
@@ -1198,23 +1209,28 @@ a {
 }
 .paginator {
     display: flex;
-    margin-bottom: 70px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 760px;
+    margin-top: -11px;
+    margin-bottom: 77px;
     font-family: "Gilroy", sans-serif;
     font-size: 16px;
-    flex-grow: 1;
     font-weight: 700;
     letter-spacing: 3.2px;
     line-height: 70px;
     text-transform: uppercase;
     text-align: center;
     color: black;
-    margin-left: 40px;
     background-color: rgba(0, 0, 0, 0.08);
 }
+.page-numbers {
+    display: : flex;
+    min-width: 160px;
+}
 .paginator__link {
-    display: inline-block;
-    width: 137px;
     height: 70px;
+    padding: 0 30px;
     color: black;
 }
 .paginator__link:hover {
@@ -1225,6 +1241,7 @@ a {
     background-color: rgba(0, 0, 0, 0.16)
 }
 .paginator__link--page {
+    padding: 0 10px;
     color: rgba(0, 0, 0, 0.3);
     background: none;
 }
