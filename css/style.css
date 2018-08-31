@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    width: 1440px;
+    /* width: 1440px; */
     min-width: 1200px;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
