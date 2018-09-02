@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    width: 1440px;/* ЗАКОММЕНТИРОВАТЬ  */
+    /* width: 1440px; */
     min-width: 1200px;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
@@ -1057,6 +1057,15 @@ a {
     background-color: white;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
     z-index: 110;
+}
+.popup-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .popup--display {
     display: block;
