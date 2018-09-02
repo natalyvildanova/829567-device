@@ -151,15 +151,15 @@
             стандартную камеру.</p>
           <a class="slider__link" href="#">Подробнее</a>
           <ul class="slider__table table-slider">
-              <li class="table-slider__info">
-                <div>800 м</div>
-                <div class="table-slider__title">Дальность полёта</div>
-              </li>
-              <li class="table-slider__info">
-                <div>50 м</div>
-                <div class="table-slider__title">Радиус поражения</div>
-              </li>
-            </ul>
+            <li class="table-slider__info">
+              <div>800 м</div>
+              <div class="table-slider__title">Дальность полёта</div>
+            </li>
+            <li class="table-slider__info">
+              <div>50 м</div>
+              <div class="table-slider__title">Радиус поражения</div>
+            </li>
+          </ul>
           <p class="slider__number">03</p>
         </div>
       </section>
@@ -274,6 +274,26 @@
       </div>
     </section>
   </main>
+  <article class="popup popup-form">
+    <button class="popup__close-button" href="#">Назад</button>
+    <form method="POST" action="https://echo.htmlacademy.ru/">
+    <div class="popup__main-info">
+      <div class="popup__half">
+        <label><div class="popup__titles">Ваше имя:</div><input class="popup__half-input" type="text" placeholder="Имя Фамилия" </label>
+      </div>
+      <div class="popup__half">
+        <label><div class="popup__titles">Ваш e-mail:</div><input class="popup__half-input" type="email" placeholder="email@example.com" </label>
+      </div>
+    </div>
+    <div class="popup__letter">
+      <label><div class="popup__titles">Текст письма:</div><textarea class="popup__half-input popup__half-input--textarea" placeholder="В свободной форме"></textarea></label>
+    </div>
+    <button class="popup__button" type="submit">Отправить</button>
+  </form>
+  </article>
+  <article class="popup popup-map">
+    <img src="img/map-big.jpg" width="960" height="559">
+  </article>
 
   <footer class="footer">
     <div class="footer-container">
