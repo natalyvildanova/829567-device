@@ -918,7 +918,16 @@ a {
 .general-info__map {
     padding: 0;
     padding-top: 9px;
-    padding-bottom: 60px;
+    margin-bottom: 66px;
+}
+.map__link {
+    display: block;
+
+    padding: 0;
+    margin: 0;
+    
+    font-size: 0;
+    line-height: 0;
 }
 .general-info__link {
     display: block;
@@ -1318,10 +1327,11 @@ a {
         background-color: #f0c52e;
 }
 .popup-map {
-    font-size: 14px;
-    line-height: 0;
     padding: 0;
     margin: 0;
+
+    font-size: 14px;
+    line-height: 0;
 }
 /* .search-form__input:focus {
     outline: none;
