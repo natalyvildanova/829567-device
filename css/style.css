@@ -1507,6 +1507,11 @@ a {
     justify-content: flex-end;
     flex-wrap: wrap;
 }
+.container-cards {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
 .shop-item {
     position: relative;
     width: 360px;
@@ -1540,6 +1545,7 @@ a {
     display: block;
     height: 40px;
     width: 220px;
+    margin-bottom: 20px;
     font-family: "gilroy", sans-serif;
     font-size: 18px;
     font-weight: 700;
