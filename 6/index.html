@@ -44,7 +44,7 @@
     </section>
     <nav class="header-bottom">
       <ul class="nav-list">
-        <li class="nav-list__item nav-list__item--right">
+        <li class="nav-list__item nav-list__item--left">
           <a href="#" class="nav-list__link nav-list__link--drop">Каталог товаров</a>
           <div class="dropout-catalog">
             <div class="catalog">
@@ -59,7 +59,7 @@
                   <a href="#" class="catalog-list__link">Экшн-камеры</a>
                 </li>
               </ul>
-              <ul class="catalog-list">
+              <ul class="catalog-list catalog-list--margin">
                 <li>
                   <a href="#" class="catalog-list__link">Фитнес-браслеты</a>
                 </li>
@@ -78,11 +78,11 @@
         <li class="nav-list__item">
           <a href="#" class="nav-list__link">Доставка</a>
         </li>
-        <li class="nav-list__item nav-list__item--right2">
+        <li class="nav-list__item">
           <a href="#" class="nav-list__link">Гарантия</a>
         </li>
-        <li class="nav-list__item">
-          <a href="#" class="nav-list__link">Контакты</a>
+        <li class="nav-list__item  nav-list__item--right">
+          <a href="#" class="nav-list__link nav-list__link--right">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -92,32 +92,34 @@
 
     <div class="slider">
       <div class="sider__buttons">
-          <button class="slider__button slider__button--active">Первый слайд</button>
-          <button class="slider__button">Второй слайд</button>
-          <button class="slider__button">Третий слайд</button>
+        <button class="slider__button">Первый слайд</button>
+        <button class="slider__button">Второй слайд</button>
+        <button class="slider__button  slider__button--active">Третий слайд</button>
       </div>
-      <section class="slider__slide slider__slide1 current-slide">
+      <section class="slider__slide slider__slide1">
         <div class="slider__column-left">
           <img class="slider__image" src="img/slide-1.png" width="526" height="497" alt="Монопод для селфи">
         </div>
         <div class="slider__column-right">
           <p class="slider__call">Делай селфи,<br> как Бен Стиллер!</p>
-          <p class="slider__info">Самая длинная палка для селфи доступна в нашем магазине. Восемь(восемь, Карл!) метров длиной
-            и весом всего 5 килограмм.
+          <p class="slider__info">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров
+            длиной и весом всего 5 килограмм.
           </p>
           <a class="slider__link" href="#">Подробнее</a>
-          <table class="slider__table table-slider">
-            <tr>
-              <td class="table-slider__info">8,5 м</td>
-              <td class="table-slider__info">5 кг</td>
-              <td class="table-slider__info">Карбон</td>
-            </tr>
-            <tr>
-              <th class="table-slider__title">Длина палки</th>
-              <th class="table-slider__title">Вес палки</th>
-              <th class="table-slider__title">Материал</th>
-            </tr>
-          </table>
+          <ul class="slider__table table-slider">
+            <li class="table-slider__info">
+              <div>8,5 м</div>
+              <div class="table-slider__title">Длина палки</div>
+            </li>
+            <li class="table-slider__info">
+              <div>5 кг</div>
+              <div class="table-slider__title">Вес палки</div>
+            </li>
+            <li class="table-slider__info">
+              <div>Карбон</div>
+              <div class="table-slider__title">Материал</div>
+            </li>
+          </ul>
           <p class="slider__number">01</p>
         </div>
       </section>
@@ -131,18 +133,16 @@
             диету.
           </p>
           <a class="slider__link" href="#">Подробнее</a>
-          <table class="slider__table table-slider">
-            <tr class="table-slider__info">
-              <td>48 часов</td>
-            </tr>
-            <tr class="table-slider__title">
-              <th>Без подзарядки</th>
-            </tr>
-          </table>
+          <ul class="slider__table table-slider">
+            <li class="table-slider__info">
+              <div>48 часов</div>
+              <div class="table-slider__title">Без подзарядки</div>
+            </li>
+          </ul>
           <p class="slider__number">02</p>
         </div>
       </section>
-      <section class="slider__slide slider__slide3">
+      <section class="slider__slide slider__slide3 current-slide">
         <div class="slider__column-left">
           <img class="slider__image" src="img/slide-3.png" width="526" height="497" alt="Квадрокоптер">
         </div>
@@ -151,16 +151,16 @@
           <p class="slider__info">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под
             стандартную камеру.</p>
           <a class="slider__link" href="#">Подробнее</a>
-          <table class="slider__table table-slider">
-            <tr class="table-slider__info">
-              <td>800 м</td>
-              <td>50 м</td>
-            </tr>
-            <tr class="table-slider__title">
-              <th>Дальность полёта</th>
-              <th>Радиус поражения</th>
-            </tr>
-          </table>
+          <ul class="slider__table table-slider">
+            <li class="table-slider__info">
+              <div>800 м</div>
+              <div class="table-slider__title">Дальность полёта</div>
+            </li>
+            <li class="table-slider__info">
+              <div>50 м</div>
+              <div class="table-slider__title">Радиус поражения</div>
+            </li>
+          </ul>
           <p class="slider__number">03</p>
         </div>
       </section>
@@ -193,13 +193,13 @@
       <section class="services">
         <div class="services__column-left">
           <div class="services__buttons">
-            <button class="services__button services__button--current">Доставка</button>
+            <button class="services__button">Доставка</button>
             <button class="services__button">Гарантия</button>
-            <button class="services__button">Кредит</button>
+            <button class="services__button services__button--current">Кредит</button>
           </div>
         </div>
         <div class="services__column-right">
-          <div class="services__description services__current--decription">
+          <div class="services__description">
             <div class="delivery">
               <h2 class="services__title services__title--1">Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
@@ -208,12 +208,12 @@
           </div>
           <div class="services__description">
             <div class="guarantee">
-              <h2 class="services__title services__title--2">Гарания</h2>
+              <h2 class="services__title services__title--2">Гарантия</h2>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар,
                 не дом, конечно же.</p>
             </div>
           </div>
-          <div class="services__description">
+          <div class="services__description services__current--decription">
             <div class="credit">
               <h2 class="services__title services__title--3">Кредит</h2>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
@@ -251,29 +251,52 @@
     </section>
 
     <section class="general-info">
-        <div class="general-info__about-us">
-          <h2 class="general-info__title">О нас</h2>
-          <p class="general-info__info">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p class="general-info__info">Мы можем доставить ваш товар в самые отдалённые точки России! DEVICE работает со многими транспортными компаниями:</p>
-          <ul class="general-info__list">
-            <li class="general-info__list-item">Деловые Линии</li>
-            <li class="general-info__list-item">Автотрейдинг</li>
-            <li class="general-info__list-item">ЖелДорЭкспедиция</li>
-          </ul>
-          <a class="general-info__link" href="#">Подробнее о нас</a>
+      <div class="general-info__about-us">
+        <h2 class="general-info__title">О нас</h2>
+        <p class="general-info__info">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="general-info__info">Мы можем доставить ваш товар в самые отдалённые точки России! DEVICE работает со многими
+          транспортными компаниями:</p>
+        <ul class="general-info__list">
+          <li class="general-info__list-item">Деловые Линии</li>
+          <li class="general-info__list-item">Автотрейдинг</li>
+          <li class="general-info__list-item">ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="general-info__link" href="#">Подробнее о нас</a>
+      </div>
+      <div class="general-info__contacts">
+        <h2 class="general-info__title">Контакты</h2>
+        <p class="general-info__info">Вы можете забрать товар сами, заехав в шас офис. Заодно, вы сможете проверить работоспособность
+          покупки. Всякое бывает.
+        </p>
+        <div class="general-info__map">
+          <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
         </div>
-        <div class="general-info__contacts">
-          <h2 class="general-info__title">Контакты</h2>
-          <p class="general-info__info">Вы можете забрать товар сами, заехав в шас офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
-            бывает.
-          </p>
-          <div class="general-info__map">
-            <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
-          </div>
-          <a class="general-info__link" href="#">Напишите нам</a>
-        </div>
-      </section>
+        <a class="general-info__link" href="#">Напишите нам</a>
+      </div>
+    </section>
   </main>
+  <article class="popup popup-form">
+    <button class="popup__close-button" href="#">Назад</button>
+    <form method="POST" action="https://echo.htmlacademy.ru/">
+    <div class="popup__main-info">
+      <div class="popup__half">
+        <label><div class="popup__titles">Ваше имя:</div><input class="popup__half-input" type="text" placeholder="Имя Фамилия" </label>
+      </div>
+      <div class="popup__half">
+        <label><div class="popup__titles">Ваш e-mail:</div><input class="popup__half-input" type="email" placeholder="email@example.com" </label>
+      </div>
+    </div>
+    <div class="popup__letter">
+      <label><div class="popup__titles">Текст письма:</div><textarea class="popup__half-input popup__half-input--textarea" placeholder="В свободной форме"></textarea></label>
+    </div>
+    <button class="popup__button" type="submit">Отправить</button>
+  </form>
+  </article>
+  <article class="popup popup-map">
+    <img src="img/map-big.jpg" width="960" height="559">
+  </article>
+  <div class="popup-background">
+  </div>
 
   <footer class="footer">
     <div class="footer-container">
@@ -306,25 +329,25 @@
           <li class="site-menu__item"><a class="site-menu__link" href="#">Гарантия</a></li>
           <li class="site-menu__item"><a class="site-menu__link" href="#">Контакты</a></li>
         </ul>
-        <p class="number">Тел:+7(495)495-95-95</p>
+        <p class="number">Тел.: +7 (495) 495-95-95</p>
       </div>
       <div class="footer__bottom">
-          <h2 class="visually-hidden">Мы в социальных сетях</h2>
-          <ul class="footer__social-list social">
-            <li class="social__item">
-              <a class="social__link social__link--1" href="# ">facebook</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--2" href="# ">intagram</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--3" href="# ">twitter</a>
-            </li>
-          </ul>
-          <p class="footer__copyright-icon copyright">
-            <a class="copyright__link" href="#">HTML Academy</a>
-          </p>
-        </div>
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="footer__social-list social">
+          <li class="social__item">
+            <a class="social__link social__link--1" href="# ">facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--2" href="# ">intagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--3" href="# ">twitter</a>
+          </li>
+        </ul>
+        <p class="footer__copyright-icon copyright">
+          <a class="copyright__link" href="#">HTML Academy</a>
+        </p>
+      </div>
     </div>
   </footer>
 </body>
