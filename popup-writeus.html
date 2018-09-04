@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <article class="popup popup-form popup--display">
+        <a class="popup__close-button" href="index.html">Назад</a>
+        <form method="POST" action="https://echo.htmlacademy.ru/">
+            <div class="popup__main-info">
+                <div class="popup__half">
+                    <label class="popup__titles">Ваше имя:<input class="popup__half-input" type="text" placeholder="Имя Фамилия">
+                    </label>
+                </div>
+                <div class="popup__half">
+                    <label class="popup__titles">Ваш e-mail:
+                        <input class="popup__half-input" type="email" placeholder="email@example.com">
+                    </label>
+                </div>
+            </div>
+            <div class="popup__letter">
+                <label class="popup__titles">Текст письма:
+                    <textarea class="popup__half-input popup__half-input--textarea" placeholder="В свободной форме"></textarea>
+                </label>
+            </div>
+            <button class="popup__button" type="submit">Отправить</button>
+        </form>
+    </article>
+
+</body>
+
+</html>
