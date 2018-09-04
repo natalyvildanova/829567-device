@@ -90,7 +90,7 @@
   <main>
 
     <div class="slider">
-      <div class="sider__buttons">
+      <div class="slider__buttons">
         <button class="slider__button  slider__button--active">Первый слайд</button>
         <button class="slider__button">Второй слайд</button>
         <button class="slider__button">Третий слайд</button>
@@ -147,8 +147,8 @@
         </div>
         <div class="slider__column-right">
           <p class="slider__call">Порхает как бабочка, жалит как пчела!</p>
-          <p class="slider__info">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным&nbsp;лазером, замаскированным под
-            стандартную камеру.</p>
+          <p class="slider__info">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным&nbsp;лазером, замаскированным
+            под стандартную камеру.</p>
           <a class="slider__link" href="#">Подробнее</a>
           <ul class="slider__table table-slider">
             <li class="table-slider__info">
@@ -270,34 +270,40 @@
         <div class="general-info__map">
           <a class="map__link" href="popup-map.html"><img src="img/map.jpg" width="560" height="222" alt="Карта расположения офиса по адресу улица Строителей, 15"></a>
         </div>
-        <a class="general-info__link" href="popup-writeus.html">Напишите нам</a>
+        <a class="general-info__link write-us__link" href="popup-writeus.html">Напишите нам</a>
       </div>
     </section>
   </main>
   <article class="popup popup-form">
     <a class="popup__close-button" href="index.html">Назад</a>
-    <form method="POST" action="https://echo.htmlacademy.ru/">
-    <div class="popup__main-info">
-      <div class="popup__half">
-        <label class="popup__titles">Ваше имя:<input class="popup__half-input" type="text" placeholder="Имя Фамилия"> 
+    <form method="POST" action="https://echo.htmlacademy.ru/" id="popup-form">
+      <div class="popup__main-info">
+        <div class="popup__half">
+          <label class="popup__titles">Ваше имя:
+            <input class="popup__half-input popup__name" type="text" name="Name" form="popup-form" placeholder="Имя Фамилия">
+          </label>
+        </div>
+        <div class="popup__half">
+          <label class="popup__titles">Ваш e-mail:
+            <input class="popup__half-input popup__mail" name="Mail" type="email" placeholder="email@example.com">
+          </label>
+        </div>
+      </div>
+      <div class="popup__letter">
+        <label class="popup__titles">Текст письма:
+          <textarea class="popup__half-input popup__half-input--textarea" name="text" form="popup-form" placeholder="В свободной форме"></textarea>
         </label>
       </div>
-      <div class="popup__half">
-        <label class="popup__titles">Ваш e-mail:
-          <input class="popup__half-input" type="email" placeholder="email@example.com"> 
-        </label>
-      </div>
-    </div>
-    <div class="popup__letter">
-      <label class="popup__titles">Текст письма:
-        <textarea class="popup__half-input popup__half-input--textarea" placeholder="В свободной форме"></textarea>
-      </label>
-    </div>
-    <button class="popup__button" type="submit">Отправить</button>
-  </form>
+      <button class="popup__button" type="submit">Отправить</button>
+    </form>
   </article>
   <article class="popup popup-map">
-    <img src="img/map-big.jpg" width="960" height="559" alt="Карта расположения офиса по адресу улица Строителей, 15">
+
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBBYAIdVoC" width="960" height="559" frameborder="1" allowfullscreen="true">
+        <img src="img/map-big.jpg" width="960" height="559" alt="Карта расположения офиса по адресу улица Строителей, 15">
+      </iframe>
+
+    
   </article>
   <div class="popup-background">
   </div>
@@ -354,6 +360,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="style.js"></script>
 </body>
 
 </html>

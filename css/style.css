@@ -384,7 +384,7 @@ a {
 
     background: #ffffff;
 }
-.sider__buttons { 
+.slider__buttons { 
     position: absolute;
     top: 202px;
     right: 81px;
@@ -1209,10 +1209,7 @@ a {
     width: 100vw;
     height: 100vh;
 
-    background-color: rgba(0, 0, 0, 0.3);
-}
-.popup--display {
-    display: block;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .popup-form  {
     min-height: 555px;
@@ -1342,6 +1339,14 @@ a {
 
     font-size: 14px;
     line-height: 0;
+}
+.popup--display {
+    display: block; 
+    animation-name: Hello;
+	animation-duration: 0.6;	
+	animation-timing-function: ease;
+}
+@keyframes Hello {
 }
 /* .search-form__input:focus {
     outline: none;
