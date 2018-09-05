@@ -839,7 +839,7 @@ a {
 .brands-list__link:hover {
     opacity: 1;
 }
-.brands-list__link:hover.brands-list__logo {
+.brands-list__link:hover .logo-filter {
     filter: none;
 }
 .general-info {
@@ -1065,6 +1065,7 @@ a {
     opacity: 0.3;    
 }
  .footer__middle {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1078,7 +1079,11 @@ a {
     margin: 0;
 }
 .number {
+    /* margin-left: auto; */
     text-align: end;
+}
+.adress {
+    /* margin-right: auto; */
 }
 .footer__site-menu-list {
     align-self: flex-end;
