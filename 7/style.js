@@ -1,8 +1,10 @@
 var mainSlider = document.querySelector(".slider");
 console.log (mainSlider);
-
+var sliderButton = mainSlider.querySelectorAll(".slider__button");
+var sliderSlide = mainSlider.querySelectorAll(".slider__slide");
 var servicesSlider = document.querySelector(".services");
 console.log (servicesSlider);
+
 
 var popupBackground = document.querySelector(".popup-background");
 var map = document.querySelector(".map__link");
@@ -38,6 +40,7 @@ map.addEventListener("click", function (evt) {
     console.log("клик по карте");
     popupBackground.classList.add("popup--display");
     popupMap.classList.add("popup--display");
+    popupMap.classList.add("popup--display-animation");
 });
 
 popupWriteUs.addEventListener("click", function(evt) {
@@ -45,6 +48,7 @@ popupWriteUs.addEventListener("click", function(evt) {
     console.log("клик по ссылке Пишите нам");
     popupBackground.classList.add("popup--display");
     popupForm.classList.add("popup--display");
+    popupForm.classList.add("popup--display-animation");
     if (storageName) {
         inputName.value = storageName;
         inputMail.focus();
@@ -61,15 +65,18 @@ popupBackground.addEventListener("click", function(evt){
     evt.preventDefault();
     popupBackground.classList.remove("popup--display");
     popupMap.classList.remove("popup--display");
+    popupForm.classList.remove("popup--display-animation");
+    popupForm.classList.remove("popup-error");
     popupForm.classList.remove("popup--display");
 });
 
 
 form.addEventListener("submit", function(post) {
-    post.preventDefault();
     if ((!inputName.value)||(!inputMail.value)||(!inputText.value)) {
         post.preventDefault();
-        console.log("vvod!");
+        popupForm.classList.remove("popup-error");
+        this.getBoundingClientRect();
+        popupForm.classList.add("popup-error");
     } else { 
         localStorage.setItem("Name", inputName.value);
         localStorage.setItem("Mail", inputMail.value);
@@ -79,6 +86,8 @@ popupFormBack.addEventListener("click", function(back) {
     back.preventDefault();
     popupBackground.classList.remove("popup--display");
     popupForm.classList.remove("popup--display");
+    popupForm.classList.remove("popup--display-animation");
+    popupForm.classList.remove("popup-error");
 });
 window.addEventListener("keydown", function(esc) {
     if (esc.keyCode === 27) {
