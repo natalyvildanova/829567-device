@@ -104,92 +104,92 @@
       <!-- <div class="shop__container"> -->
       <div class="shop__column-left">
         <div class="width-left">
-        <div class="header-filter">
-          <span class="shop__title">Фильтр:</span>
-        </div>
-        <section>
-          <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru/">
-            <fieldset class="filter-form__fieldset">
-              <legend class="filter-form__legend filter-form__legend--range">Стоимость</legend>
-              <!-- <input type="range" name="price" min="0" max="10000" step="500"> -->
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-max"></div>
+          <div class="header-filter">
+            <span class="shop__title">Фильтр:</span>
+          </div>
+          <section>
+            <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru/">
+              <fieldset class="filter-form__fieldset">
+                <legend class="filter-form__legend filter-form__legend--range">Стоимость</legend>
+                <!-- <input type="range" name="price" min="0" max="10000" step="500"> -->
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="price-controls">
+                  <div class="price-controls">
                     <label class="min-price">от <input name="min-price" type="text" value="0"></label>
                     <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                  </div>
                 </div>
-              </div>
-            </fieldset>
-            <fieldset class="filter-form__fieldset" style="margin-top: -2px;">
-              <legend class="filter-form__legend">Цвет</legend>
-              <ul class="filter-form__list color-list">
-                <li class="color-list__item">
-                  <input class="color-list__item-input" type="checkbox" name="color" value="black" id="black"><label for="black"
-                    class="color-list__item-label">Черный</label>
-                </li>
-                <li class="color-list__item">
-                  <input class="color-list__item-input" type="checkbox" name="color" value="white" id="white"><label for="white"
-                    class="color-list__item-label">Белый</label>
-                </li>
-                <li class="color-list__item">
-                  <input class="color-list__item-input" type="checkbox" name="color" value="blue" id="blue"><label for="blue"
-                    class="color-list__item-label">Синий</label>
-                </li>
-                <li class="color-list__item">
-                  <input class="color-list__item-input" type="checkbox" name="color" value="red" disabled id="red"><label
-                    for="red" class="color-list__item-label">Красный</label>
-                </li>
-                <li class="color-list__item">
-                  <input class="color-list__item-input" type="checkbox" name="color" value="pink" checked disabled id="pink"><label
-                    for="pink" class="color-list__item-label">Розовый</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="filter-form__fieldset">
-              <legend class="filter-form__legend">Bluetooth</legend>
-              <ul class="filter-form__list bluetooth-list">
-                <li class="bluetooth-list__item">
-                  <input class="bluetooth-list__item-input" type="radio" name="bluetooth" value="With Bluetooth" id="with"><label
-                    for="with" class="bluetooth-list__item-label">Есть</label>
-                </li>
-                <li class="bluetooth-list__item">
-                  <input class="bluetooth-list__item-input" type="radio" name="bluetooth" value="Without Bluetooth" id="without" checked disabled><label
-                    for="without" class="bluetooth-list__item-label">Нет</label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="filter-form__button" type="submit">Показать</button>
-          </form>
-        </section>
+              </fieldset>
+              <fieldset class="filter-form__fieldset" style="margin-top: -2px;">
+                <legend class="filter-form__legend">Цвет</legend>
+                <ul class="filter-form__list color-list">
+                  <li class="color-list__item">
+                    <input class="color-list__item-input" type="checkbox" name="color" value="black" id="black"><label for="black"
+                      class="color-list__item-label">Черный</label>
+                  </li>
+                  <li class="color-list__item">
+                    <input class="color-list__item-input" type="checkbox" name="color" value="white" id="white"><label for="white"
+                      class="color-list__item-label">Белый</label>
+                  </li>
+                  <li class="color-list__item">
+                    <input class="color-list__item-input" type="checkbox" name="color" value="blue" id="blue"><label for="blue"
+                      class="color-list__item-label">Синий</label>
+                  </li>
+                  <li class="color-list__item">
+                    <input class="color-list__item-input" type="checkbox" name="color" value="red" disabled id="red"><label
+                      for="red" class="color-list__item-label">Красный</label>
+                  </li>
+                  <li class="color-list__item">
+                    <input class="color-list__item-input" type="checkbox" name="color" value="pink" checked disabled id="pink"><label
+                      for="pink" class="color-list__item-label">Розовый</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter-form__fieldset">
+                <legend class="filter-form__legend">Bluetooth</legend>
+                <ul class="filter-form__list bluetooth-list">
+                  <li class="bluetooth-list__item">
+                    <input class="bluetooth-list__item-input" type="radio" name="bluetooth" value="With Bluetooth" id="with"><label
+                      for="with" class="bluetooth-list__item-label">Есть</label>
+                  </li>
+                  <li class="bluetooth-list__item">
+                    <input class="bluetooth-list__item-input" type="radio" name="bluetooth" value="Without Bluetooth" id="without" checked disabled><label
+                      for="without" class="bluetooth-list__item-label">Нет</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="filter-form__button" type="submit">Показать</button>
+            </form>
+          </section>
+        </div>
       </div>
-    </div>
       <div class="shop__column-right">
-          <div class="width-right">
-        <section class="header-sorting">
-          <span class="shop__title">Сортировка:</span>
-          <ul class="header-sorting__list sort-list">
-            <li class="sort-list__item">
-              <a class="sort-list__link sort-list__link--active" href="#">По цене</a>
-            </li>
-            <li class="sort-list__item">
-              <a class="sort-list__link" href="#">По типу</a>
-            </li>
-            <li class="sort-list__item">
-              <a class="sort-list__link" href="#">По популярности</a>
-            </li>
-          </ul>
-          <ul class="header-sorting__list sort-list-up-down">
-            <li><a class="sort-list-up-down__link--up" href="#">По возрастанию</a></li>
-            <li><a class="sort-list-up-down__link--down sort-list-up-down__link--active" href="#">По убыванию</a></li>
-          </ul>
-        </section>
-        <section class="item-cards">
+        <div class="width-right">
+          <section class="header-sorting">
+            <span class="shop__title">Сортировка:</span>
+            <ul class="header-sorting__list sort-list">
+              <li class="sort-list__item">
+                <a class="sort-list__link sort-list__link--active" href="#">По цене</a>
+              </li>
+              <li class="sort-list__item">
+                <a class="sort-list__link" href="#">По типу</a>
+              </li>
+              <li class="sort-list__item">
+                <a class="sort-list__link" href="#">По популярности</a>
+              </li>
+            </ul>
+            <ul class="header-sorting__list sort-list-up-down">
+              <li><a class="sort-list-up-down__link--up" href="#">По возрастанию</a></li>
+              <li><a class="sort-list-up-down__link--down sort-list-up-down__link--active" href="#">По убыванию</a></li>
+            </ul>
+          </section>
+          <section class="item-cards">
             <article class="shop-item">
               <img class="shop-item__item-image" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
               <div class="shop-item__description"><a class="shop-item__name" href="#">Любительская селфи-палка</a>
@@ -219,17 +219,17 @@
               <div class="item-add"><a class="shop-item__link" href="#">В корзину</a><a class="shop-item__link shop-item__link--compare"
                   href="#">Добавить к сравнению</a></div>
             </article>
-          <section class="paginator">
-            <a class="paginator__link paginator__link--back" href="#">Назад</a>
-            <div class="page-numbers">
-              <a class="paginator__link paginator__link--page paginator__link--active" href="#">1</a>
-              <a class="paginator__link paginator__link--page" href="#">2</a>
-              <a class="paginator__link paginator__link--page" href="#">3</a>
-            </div>
-            <a class="paginator__link" href="#">Вперед</a>
+            <section class="paginator">
+              <a class="paginator__link paginator__link--back" href="#">Назад</a>
+              <div class="page-numbers">
+                <a class="paginator__link paginator__link--page paginator__link--active" href="#">1</a>
+                <a class="paginator__link paginator__link--page" href="#">2</a>
+                <a class="paginator__link paginator__link--page" href="#">3</a>
+              </div>
+              <a class="paginator__link" href="#">Вперед</a>
+            </section>
           </section>
-        </section>
-      </div>
+        </div>
       </div>
       <!-- </div> -->
     </section>
