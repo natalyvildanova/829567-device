@@ -1259,13 +1259,18 @@ a {
     font-size: 0px;
 }
 .footer__bottom::before {
+    -ms-flex-order: -1;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     content: "";
+    display: block;
+    margin-right: auto;
 
     width: 80px;
     height: 7px;
+    -webkit-box-ordinal-group: 0;
+            order: -1;
 
     background-color: #ffc600;
 }
@@ -1277,6 +1282,7 @@ a {
         justify-content: space-around;
 
     width: 163px;
+    margin-left: -60px;
 }
 .social__link {
    display: block;
@@ -1308,7 +1314,7 @@ a {
    background-position: 0 0;
 }
 .footer__copyright-icon {
-    margin-left: 53px;
+    margin-left: auto;
 }
 .copyright__link {
    display: block;
