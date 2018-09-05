@@ -1361,9 +1361,6 @@ a {
 	animation-timing-function: ease;
 }
 @keyframes shake {
-    0%, 100% {
-      transform: translateX(50%) translateY(-50%);
-    }
   
     10%, 30%, 50%, 70%, 90% {
       transform: translateX(-52%) translateY(-50%);
@@ -1880,13 +1877,11 @@ a {
     display: : flex;
 
     min-width: 160px;
-    margin-top: 2px;
 }
 .paginator__link {
     height: 70px;
     padding: 0 30px;
     margin: 0;
-    margin-top: 2px;
 
     color: black;
 }
