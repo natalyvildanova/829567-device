@@ -832,16 +832,15 @@ a {
     list-style: none;
 }
 .brands-list__link {
-    filter: grayscale(100%);
-}
-.brands-list__logo {
     opacity: 0.2;
 }
-.brands-list__link:hover {
-    filter: none;
+.brands-list__logo {
 }
-.brands-list__logo:hover {
+.brands-list__link:hover {
     opacity: 1;
+}
+.brands-list__link:hover.brands-list__logo {
+    filter: none;
 }
 .general-info {
     display: flex;
@@ -1554,8 +1553,66 @@ a {
     line-height: 24px;
 }
 .filter-form__legend--range {
-    margin-bottom: 42px;
+    margin-bottom: 30px;
 }
+.range-filter {
+    margin-left: -15px;
+    width: 200px;
+}
+.range-controls {
+    position: relative;
+}
+.range-controls .scale {
+    width: 200px;
+    height: 2px;
+    margin-bottom: 9px;
+    background-color: #dbdbdb;
+}
+.range-controls .bar {
+    width: 55%;
+    height: 2px;
+    background-color: #91c92f;
+}
+.range-controls .toggle {
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    background-color: #ababab;
+    cursor: pointer;
+}
+.price-controls {
+    font-size: 0;
+}
+.price-controls label {
+    display: inline-block;
+    width: 48%;
+
+    font-family: "Gilroy", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.2;
+}
+.price-controls input {
+    width: 50%;
+    background-color: transparent;
+    border: none;
+}
+.range-controls .toggle-min {
+    left: -3px;
+  }
+  .range-controls .toggle-max {
+    left: 110px;
+  }
 .filter-form__list {
     padding: 0 25px;
     margin: 11px 0 3px 0;
