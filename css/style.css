@@ -1833,6 +1833,7 @@ a {
     width: 22px;
     height: 22px;
     border: 9px solid #ffffff;
+    margin-left: -1px;
 }
 .price-controls {
     font-size: 0;
