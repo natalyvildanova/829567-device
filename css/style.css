@@ -384,7 +384,7 @@ a {
 
     background: #ffffff;
 }
-.sider__buttons { 
+.slider__buttons { 
     position: absolute;
     top: 202px;
     right: 81px;
@@ -1209,10 +1209,7 @@ a {
     width: 100vw;
     height: 100vh;
 
-    background-color: rgba(0, 0, 0, 0.3);
-}
-.popup--display {
-    display: block;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .popup-form  {
     min-height: 555px;
@@ -1343,6 +1340,37 @@ a {
     font-size: 14px;
     line-height: 0;
 }
+.popup--display {
+    display: block;
+}
+.popup--display-animation {
+    animation-name: hello;
+	animation-duration: 1s;	
+	animation-timing-function: ease;
+}
+@keyframes hello {
+    from {left: 100%;
+        transform: translateX(100%) translateY(-50%);}
+    to {left: 50%;
+        transform: translateX(-50%) translateY(-50%);}
+}
+
+.popup-error {
+    animation-name: shake;
+	animation-duration: 1s;	
+	animation-timing-function: ease;
+}
+@keyframes shake {
+  
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-52%) translateY(-50%);
+    }
+  
+    20%, 40%, 60%, 80% {
+      transform: translateX(-48%) translateY(-50%);
+    }
+  }
+
 /* .search-form__input:focus {
     outline: none;
 }
@@ -1710,6 +1738,25 @@ a {
     width: 360px;
     margin: 0 0 46px 40px;
 }
+.shop-item__new {
+    position: absolute;
+    top: 21px;
+    right: 20px;
+
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    font-family: "Gilroy", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.2);
+
+}
 .shop-item__item-image {
     min-height: 380px;
     margin-bottom: 24px;
@@ -1727,6 +1774,7 @@ a {
     font-weight: 700;
     line-height: 24px;
     word-wrap: normal;
+    color: black;
 }
 .shop-item__price {
     font-family: "Gilroy", sans-serif;
@@ -1829,13 +1877,11 @@ a {
     display: : flex;
 
     min-width: 160px;
-    margin-top: 2px;
 }
 .paginator__link {
     height: 70px;
     padding: 0 30px;
     margin: 0;
-    margin-top: 2px;
 
     color: black;
 }
