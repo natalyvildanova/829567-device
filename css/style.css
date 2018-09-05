@@ -1827,6 +1827,13 @@ a {
     background-color: #ababab;
     cursor: pointer;
 }
+.range-controls .toggle:active {
+    top: -11px;
+    
+    width: 22px;
+    height: 22px;
+    border: 9px solid #ffffff;
+}
 .price-controls {
     font-size: 0;
 }
