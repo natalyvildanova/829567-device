@@ -30,7 +30,8 @@
       <div class="header-middle__column">
         <ul class="user-profile">
           <li class="user-profile__item">
-            <a class="user-profile__link user-profile__link--login" href="https://htmlacademy.ru/profile/march_is_me">Денис Вильданов</a>
+            <a class="user-profile__link user-profile__link--login" href="https://htmlacademy.ru/profile/march_is_me">Денис
+              Вильданов</a>
           </li>
           <li class="user-profile__item">
             <a class="user-profile__link user-profile__link--logout" href="#">Выйти</a>
@@ -108,10 +109,10 @@
             <span class="shop__title">Фильтр:</span>
           </div>
           <section>
+            <!-- Использую DIV вместо FIELDSET, потому что в MOZ псевдоэлементы для fieldset работают некорректно -->
             <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru/">
-              <fieldset class="filter-form__fieldset">
-                <legend class="filter-form__legend filter-form__legend--range">Стоимость</legend>
-                <!-- <input type="range" name="price" min="0" max="10000" step="500"> -->
+              <div class="filter-form__fieldset">
+                <span class="filter-form__legend filter-form__legend--range">Стоимость</span>
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
@@ -125,9 +126,9 @@
                     <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
                   </div>
                 </div>
-              </fieldset>
-              <fieldset class="filter-form__fieldset" style="margin-top: -2px;">
-                <legend class="filter-form__legend">Цвет</legend>
+              </div>
+              <div class="filter-form__fieldset" style="margin-top: -2px;">
+                <span class="filter-form__legend">Цвет</span>
                 <ul class="filter-form__list color-list">
                   <li class="color-list__item">
                     <input class="color-list__item-input" type="checkbox" name="color" value="black" id="black"><label for="black"
@@ -150,9 +151,9 @@
                       for="pink" class="color-list__item-label">Розовый</label>
                   </li>
                 </ul>
-              </fieldset>
-              <fieldset class="filter-form__fieldset">
-                <legend class="filter-form__legend">Bluetooth</legend>
+              </div>
+              <div class="filter-form__fieldset filter-form__fieldset--bluetooth">
+                <span class="filter-form__legend">Bluetooth</span>
                 <ul class="filter-form__list bluetooth-list">
                   <li class="bluetooth-list__item">
                     <input class="bluetooth-list__item-input" type="radio" name="bluetooth" value="With Bluetooth" id="with"><label
@@ -163,7 +164,7 @@
                       for="without" class="bluetooth-list__item-label">Нет</label>
                   </li>
                 </ul>
-              </fieldset>
+              </div>
               <button class="filter-form__button" type="submit">Показать</button>
             </form>
           </section>
@@ -185,8 +186,9 @@
               </li>
             </ul>
             <ul class="header-sorting__list sort-list-up-down">
-              <li><a class="sort-list-up-down__link--up" href="#">По возрастанию</a></li>
-              <li><a class="sort-list-up-down__link--down sort-list-up-down__link--active" href="#">По убыванию</a></li>
+              <li><a class="sort-list-up-down__link--up" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+              <li><a class="sort-list-up-down__link--down sort-list-up-down__link--active" href="#"><span class="visually-hidden">По
+                    убыванию</span></a></li>
             </ul>
           </section>
           <section class="item-cards">
@@ -248,7 +250,8 @@
         </div>
         <ul class="footer__user-profile-list profile-list">
           <li class="profile-list__item">
-            <a class="profile-list__link profile-list__link--login" href="https://htmlacademy.ru/profile/march_is_me">Денис Вильданов</a>
+            <a class="profile-list__link profile-list__link--login" href="https://htmlacademy.ru/profile/march_is_me">Денис
+              Вильданов</a>
           </li>
           <li class="profile-list__item">
             <a class="profile-list__link profile-list__link--logout" href="#">Выйти</a>
@@ -275,17 +278,17 @@
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="footer__social-list social">
           <li class="social__item">
-            <a class="social__link social__link--1" href="# ">facebook</a>
+            <a class="social__link social__link--1" href="#"><span class="visually-hidden">facebook</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--2" href="# ">intagram</a>
+            <a class="social__link social__link--2" href="#"><span class="visually-hidden">intagram</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--3" href="# ">twitter</a>
+            <a class="social__link social__link--3" href="#"><span class="visually-hidden">twitter</span></a>
           </li>
         </ul>
         <p class="footer__copyright-icon copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
         </p>
       </div>
     </div>
