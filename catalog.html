@@ -6,7 +6,7 @@
   <title>HTML Academy: Девайс</title>
   <link href="css/min-normalize.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/min-style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,7 +30,8 @@
       <div class="header-middle__column">
         <ul class="user-profile">
           <li class="user-profile__item">
-            <a class="user-profile__link user-profile__link--login" href="https://htmlacademy.ru/profile/march_is_me">Денис Вильданов</a>
+            <a class="user-profile__link user-profile__link--login" href="https://htmlacademy.ru/profile/march_is_me">Денис
+              Вильданов</a>
           </li>
           <li class="user-profile__item">
             <a class="user-profile__link user-profile__link--logout" href="#">Выйти</a>
@@ -111,7 +112,7 @@
             <!-- Использую DIV вместо FIELDSET, потому что в MOZ псевдоэлементы для fieldset работают некорректно -->
             <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru/">
               <div class="filter-form__fieldset">
-                <legend class="filter-form__legend filter-form__legend--range">Стоимость</legend>
+                <span class="filter-form__legend filter-form__legend--range">Стоимость</span>
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
@@ -127,7 +128,7 @@
                 </div>
               </div>
               <div class="filter-form__fieldset" style="margin-top: -2px;">
-                <legend class="filter-form__legend">Цвет</legend>
+                <span class="filter-form__legend">Цвет</span>
                 <ul class="filter-form__list color-list">
                   <li class="color-list__item">
                     <input class="color-list__item-input" type="checkbox" name="color" value="black" id="black"><label for="black"
@@ -152,7 +153,7 @@
                 </ul>
               </div>
               <div class="filter-form__fieldset filter-form__fieldset--bluetooth">
-                <legend class="filter-form__legend">Bluetooth</legend>
+                <span class="filter-form__legend">Bluetooth</span>
                 <ul class="filter-form__list bluetooth-list">
                   <li class="bluetooth-list__item">
                     <input class="bluetooth-list__item-input" type="radio" name="bluetooth" value="With Bluetooth" id="with"><label
@@ -186,7 +187,8 @@
             </ul>
             <ul class="header-sorting__list sort-list-up-down">
               <li><a class="sort-list-up-down__link--up" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
-              <li><a class="sort-list-up-down__link--down sort-list-up-down__link--active" href="#"><span class="visually-hidden">По убыванию</span></a></li>
+              <li><a class="sort-list-up-down__link--down sort-list-up-down__link--active" href="#"><span class="visually-hidden">По
+                    убыванию</span></a></li>
             </ul>
           </section>
           <section class="item-cards">
@@ -248,7 +250,8 @@
         </div>
         <ul class="footer__user-profile-list profile-list">
           <li class="profile-list__item">
-            <a class="profile-list__link profile-list__link--login" href="https://htmlacademy.ru/profile/march_is_me">Денис Вильданов</a>
+            <a class="profile-list__link profile-list__link--login" href="https://htmlacademy.ru/profile/march_is_me">Денис
+              Вильданов</a>
           </li>
           <li class="profile-list__item">
             <a class="profile-list__link profile-list__link--logout" href="#">Выйти</a>
