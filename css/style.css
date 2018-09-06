@@ -19,7 +19,6 @@ html {
   box-sizing: border-box;
 }
 body {
-  /* width: 1440px; */
   min-width: 1200px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -979,7 +978,7 @@ a {
 
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 81px;
+  margin-bottom: 82px;
 }
 .general-info__about-us {
   width: 500px;
@@ -1139,7 +1138,7 @@ a {
   -ms-flex-line-pack: center;
   align-content: center;
 
-  margin-bottom: 31px;
+  margin-bottom: 33px;
 }
 .footer__logo {
   width: 163px;
@@ -1235,7 +1234,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
 
-  margin-bottom: 62px;
+  margin-bottom: 47px;
 }
 .number,
 .adress {
@@ -1326,7 +1325,7 @@ a {
       flex-wrap: wrap;
 
   width: 163px;
-  margin-left: -60px;
+  margin-left: -53px;
 }
 .social__link {
   display: block;
@@ -1510,6 +1509,10 @@ a {
   padding: 0 17px;
   border: 3px solid transparent;
 
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
   color: #464646;
 
   background-color: #f2f2f2;
